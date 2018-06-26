@@ -1,0 +1,33 @@
+---
+- name: DYNAMIC REPORTING PART
+  hosts: cisco
+  gather_facts: no
+  connection: network_cli
+
+  roles:
+    - ansible-network.network-engine
+
+  tasks:
+  - name: CAPTURE SHOW IP ROUTE
+    ios_command:
+      commands:
+        - show ip interface brief
+    register: output
+
+  - name: PARSE THE RAW OUTPUT
+    command_parser:
+      file: "parsers/ios_show_ip_interface_brief.yml"
+      content: "{{ output.stdout[0] }}"
+
+
+  - name: GENERATE REPORT FRAGMENTS
+    template:
+      src: ip_interface_renderer.j2
+      dest: ip_intf_reports/{{inventory_hostname}}_report.md
+
+  - name: GENERATE A CONSOLIDATED REPORT
+    assemble:
+      src: ip_intf_reports/
+      dest: ip_interfaces_report.md
+    delegate_to: localhost
+    run_once: yes

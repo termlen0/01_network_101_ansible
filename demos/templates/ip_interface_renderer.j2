@@ -1,0 +1,13 @@
+
+
+
+{{ inventory_hostname.upper() }}:
+| Interface name | IP Address | Admin State | Protocol State |
+---
+{% for interface in ip_interface_facts %}
+{% for intf, intf_data in interface.items() %}
+| {{ intf }} | {{ intf_data.data.ip }} | {{ intf_data.data.admin_state }} | {{ intf_data.data.protocol_state }} |
+{% endfor %}
+{% endfor %}
+
+    
