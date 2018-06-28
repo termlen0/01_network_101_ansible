@@ -19,9 +19,11 @@ Twitter/Github : @termlen0
 
 - Demos:
 
-  1. Configuring multiple devices 
+  1. Backing up IOS devices
   
-  2. Using Ansible for dynamic documentation
+  2. Configuring multiple devices 
+  
+  3. Using Ansible for dynamic documentation
 
 
 
@@ -42,7 +44,7 @@ Twitter/Github : @termlen0
   
 # Ansible for computer networks
 
-- Some challenges
+- Challenges
 
 - Network engineers are not programmers(!)
 
