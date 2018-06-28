@@ -1,5 +1,5 @@
 ---
-- name: DYNAMIC REPORTING PART
+- name: DYNAMIC REPORTING
   hosts: cisco
   gather_facts: no
   connection: network_cli

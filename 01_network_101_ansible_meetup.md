@@ -53,6 +53,12 @@ Twitter/Github : @termlen0
 
 
 
+## The most important slide!!!
+
+- Inventory
+
+- Playbook
+
 
 ## The Ansible ecosystem
 
