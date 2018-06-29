@@ -1,10 +1,13 @@
+
+
+
 # RTR1:
 | Interface name | IP Address | Admin State | Protocol State |
 |---|---|---|---|
 | GigabitEthernet1 | 172.16.244.50 | up | up |
 | Loopback0 | 192.168.1.101 | up | up |
 | Loopback1 | 10.1.1.101 | administratively down | down |
-| Tunnel0 | 10.100.100.1 | up | up |
+| Tunnel0 | 172.24.0.1 | up | up |
 | Tunnel1 | 10.200.200.1 | up | up |
 | VirtualPortGroup0 | 192.168.35.101 | up | up |
 |---|---|---|---|
@@ -48,6 +51,8 @@
 | GigabitEthernet1 | 172.17.36.158 | up | up |
 | Loopback0 | 192.168.4.104 | up | up |
 | Loopback1 | 10.4.4.104 | up | up |
-| Tunnel0 | 10.101.101.4 | up | up |
+| Tunnel0 | 172.24.0.5 | up | up |
 | VirtualPortGroup0 | 192.168.35.101 | up | up |
 |---|---|---|---|
+
+    

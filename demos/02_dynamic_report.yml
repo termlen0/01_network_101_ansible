@@ -19,6 +19,10 @@
       file: "parsers/ios_show_ip_interface_brief.yml"
       content: "{{ output.stdout[0] }}"
 
+  - name: ENSURE THAT THE FRAGMENTS DIR IS PRESENT
+    file:
+      path: ./ip_intf_reports
+      state: directory
 
   - name: GENERATE REPORT FRAGMENTS
     template:
