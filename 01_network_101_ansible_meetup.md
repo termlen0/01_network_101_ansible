@@ -107,8 +107,17 @@ Twitter/Github : @termlen0
 
 
 
+## The Ansible ecosystem
+<img src="images/how-ansible-works-diagram-06.svg" />
+
+
+
 
 # Demos
+
+
+
+## Backing up IOS devices
 
 
 
